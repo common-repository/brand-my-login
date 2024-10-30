@@ -1,0 +1,239 @@
+form.settings,
+div.preview-login-page{
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+}
+
+form.settings{
+    padding-right: 20px;
+}
+
+div.preview-login-page{
+    padding: 0 20px;
+}
+
+.form-table th{
+    width: 150px;
+}
+
+.bml-button-default{
+    cursor: pointer;
+    font-size: 85%;
+}
+
+.bml-media-url{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.bml-media-url,
+.td-form-border .output-value{
+    color: #444;
+    padding: 4px 6px;
+}
+
+.bml-media-url{
+    margin-right: 10px;
+}
+
+.bml-media-url,
+.preview-img{
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 310px;
+    
+}
+
+.bml-media-url,
+.preview-img,
+.td-form-border .output-value{
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.preview-img{
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.preview-img.logo{
+    background-size: contain;
+    background-image: url(../images/w-logo-blue.png);
+    background-image: none,url(../images/wordpress-logo.svg);
+}
+
+.preview-img.bg{
+    background-size: cover;
+}
+
+p.submit{
+    margin: 0;
+}
+
+
+iframe#preview-login-page-iframe{
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgb(204, 204, 204);
+    -moz-box-shadow: 0px 0px 3px 0px rgb(204, 204, 204);
+    box-shadow: 0px 0px 3px 0px rgb(204, 204, 204);
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+}
+
+.preview-login-page .zoom-buttons{
+    text-align: right;
+    margin-top: 3px;
+}
+
+.preview-login-page .zoom-buttons span{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: -1px;
+    line-height: 0.8;
+    padding: 4px 8px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    user-select: none;
+}
+
+.preview-login-page .zoom-buttons span:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.preview-login-page .zoom-buttons span:last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+.form-table .td-accent-color,
+.form-table .td-bg-image{
+    padding-bottom: 5px;
+}
+.form-table .td-logo-size,
+.form-table .td-form-border,
+.form-table .td-bg-position{
+    padding-top: 5px;
+}
+.form-table .td-form-border.width{
+    padding-bottom: 5px;
+}
+
+.td-form-border .label,
+.td-form-border .range,
+.td-form-border .output-value{
+    display: inline-block;
+}
+
+.td-form-border .label,
+.td-form-border .range{
+    margin-right: 12px;
+}
+
+.td-form-border .label{
+    width: 126px;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.td-form-border .output-value{
+    text-align: center;
+    width: 30px;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.range {
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.range:hover {
+    opacity: 1;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0085ba;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #0085ba;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1285px){
+    .form-table td, .form-table th, .label-responsive {
+        display: block;
+        width: auto;
+    }
+
+    .form-table th {
+        padding-top: 10px;
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 841px){
+    form.settings,
+    div.preview-login-page{
+        box-sizing: initial;
+        width: 100%;
+        float: none;
+    }
+
+    form.settings{
+        padding-right: 0;
+    }
+
+    div.preview-login-page{
+        padding: 0;
+    }
+
+    .bml-media-url{
+        display: initial;
+        box-sizing: initial;
+        width: auto;
+        max-width: unset;
+        white-space: initial;
+        overflow: initial;
+    }
+}
+
+@media screen and (max-width: 782px){
+    .preview-img{
+        height: 110px;
+        width: 100%;
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 373px){
+    .td-form-border .label{
+        display: block;
+        width: auto;
+        margin-right: 0;
+    }
+}
